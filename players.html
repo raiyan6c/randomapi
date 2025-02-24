@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="players.css">
+</head>
+<body>
+
+    <input type="text" id="search" placeholder="search here" onkeyup="searchUser()">
+
+    <div class="main-container">
+        <div id="product-container" class="product-container">
+
+        </div>
+        <div id="detailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-img" src="" alt="" style="width: 100px; height: 100px; border-radius: 50%;">
+                <p id="modal-gender"></p>
+                <p id="modal-cell"></p>
+                <p id="modal-email"></p>
+                <p id="modal-location"></p>
+            </div>
+        </div>
+        
+        <div class="cart-container">
+            <h1>Members:  <span id="count">0</span></h1>
+            <div id="cart-main-container" class="cart-main-container"></div>
+            <hr>
+            <h3>all selected are here.</h3>
+        </div>
+    </div>
+    
+
+    <script src="players.js"></script>
+</body>
+</html>
